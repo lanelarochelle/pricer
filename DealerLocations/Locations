@@ -1,0 +1,19 @@
+CREATE DATABASE DealerInformation;
+
+CREATE TABLE DealerLocation (
+    Name VARCHAR(255),
+    Country VARCHAR(255),
+    Province VARCHAR(255),
+    City VARCHAR(255),
+    Address VARCHAR(255),
+    Lat FLOAT(18),
+    Lon FLOAT(18),
+);
+
+INSERT INTO DealerLocation
+    (Name, Country, Province, City, Address, Lat, Lon)
+VALUES
+    ("Martin Deerline", "Canada", "Albert", "Barrhead", "6113 49 Street", 54.132969, -114.400590),
+    ("Noble Tractor and Equipment", "Canada", "British Columbia", "Armstrong", "4193 Noble Road", 50.442620, -119.229979),
+    ("Morris Sales & Service", "Canada", "Manitoba", "Virden", "MB-1 Virden, MB R0M 2C0", 49.858067, -100.923946),
+    ("Full Line Ag Sales Ltd.", "Canada", "Saskatchewan", "Saskatoon", "Hwy 16 W Lot 2 Yellowhead Rd; R.R #4", 52.206496, -106.714555);
